@@ -1,7 +1,6 @@
 # AXI4-Lite Master / Slave 설계
 
-> SystemVerilog | Basys3 (Artix-7) | Vivado 2023.1  
-> AXI4-Lite 프로토콜 기반 Master·Slave IP 직접 설계 및 시뮬레이션 검증
+> 온디바이스AI 시스템 반도체 설계 1기 | 송주연 | 대한상공회의소 서울기술교육센터 | 2026.04
 
 ---
 
