@@ -6,8 +6,7 @@
 
 ## 📌 프로젝트 개요
 
-AXI4-Lite 프로토콜의 동작 원리를 이해하고, Master와 Slave를 각각 FSM 기반으로 직접 설계하여 Write/Read 트랜잭션을 검증한 프로젝트입니다.  
-이후 MicroBlaze SoC 시스템에 GPIO, FND IP를 연결하여 버튼 입력 기반 카운터를 FPGA 보드에서 동작시켰습니다.
+- AXI4-Lite 프로토콜의 동작 원리를 이해하고, Master와 Slave를 각각 FSM 기반으로 직접 설계하여 Write/Read 트랜잭션 검증 
 
 | 항목 | 내용 |
 |------|------|
@@ -60,6 +59,7 @@ VALID & READY가 동시에 1인 클럭 엣지 → Handshake 완료
 
 **방법 1**: Source가 먼저 VALID를 올리고 Destination이 확인 후 READY 응답 (2클럭 소요)  
 **방법 2**: Destination이 READY를 미리 올려두면 VALID 확인 즉시 핸드셰이크 가능 (1클럭 절약)
+👉 클럭 절약 위해 방법 2 사용
 
 ### RESP 인코딩 (2bit)
 
